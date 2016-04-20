@@ -1,0 +1,78 @@
+// United 3.3.5
+// Bootswatch
+// -----------------------------------------------------
+
+@web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700";
+
+.web-font(@path) {
+  @import url("@{path}");
+}
+.web-font(@web-font-path);
+
+
+// Navbar =====================================================================
+
+.navbar {
+
+  &-default {
+
+    .badge {
+      background-color: #fff;
+      color: @navbar-default-bg;
+    }
+  }
+
+  &-inverse {
+
+    .badge {
+      background-color: #fff;
+      color: @navbar-inverse-bg;
+    }
+  }
+}
+
+@media (max-width: @grid-float-breakpoint-max) {
+
+  .navbar {
+
+    .dropdown-menu {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+// Buttons ====================================================================
+
+// Typography =================================================================
+
+h1 {
+  text-shadow: 2px 2px 8px @gray-base;
+}
+
+// Tables =====================================================================
+
+// Forms ======================================================================
+
+// Navs =======================================================================
+
+// Indicators =================================================================
+
+// Progress bars ==============================================================
+
+// Containers =================================================================
+
+// CUSTOM =====================================================================
+body {
+  background-image: @bg-img;
+  background-size: 100% auto;
+}
+
+.boxshadow {
+  background-color: @gray-base;
+  -webkit-box-shadow: @box-shadow;
+  -moz-box-shadow: @box-shadow;
+  box-shadow: @box-shadow;
+}
