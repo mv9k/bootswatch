@@ -6768,7 +6768,7 @@ button.close {
 }
 @media (max-width: 767px) {
   .navbar .dropdown-menu a {
-    color: #fff;
+    color: #000000;
   }
 }
 h1 {
